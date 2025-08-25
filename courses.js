@@ -1,5 +1,5 @@
-const SUPABASE_URL = "https://YOUR-PROJECT.supabase.co";
-const SUPABASE_ANON_KEY = "YOUR-ANON-KEY";
+const SUPABASE_URL = "https://hsaoxuuqebjvwqcdwatk.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhzYW94dXVxZWJqdndxY2R3YXRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYxMjYxNDksImV4cCI6MjA3MTcwMjE0OX0._YffdBCmzCFYvB2dz64M9bOX9Cu-e7J-ialycqvc45k";
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const coursesDiv = document.getElementById("courses");
@@ -41,3 +41,4 @@ async function logout() {
   await supabase.auth.signOut();
   window.location.href = "index.html";
 }
+
