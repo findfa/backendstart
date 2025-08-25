@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Academy - Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <h2>Manage Courses</h2>
+    <form id="course-form">
+      <input type="text" id="course-title" placeholder="Course Title" required>
+      <input type="text" id="course-summary" placeholder="Summary" required>
+      <input type="text" id="course-duration" placeholder="Duration (e.g. 6 weeks)" required>
+      <button type="submit">Add Course</button>
+    </form>
+
+    <h2>All Courses</h2>
+    <div id="course-list"></div>
+  </main>
+</body>
+</html>
